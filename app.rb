@@ -1,5 +1,6 @@
 require "sinatra"
 require "slim"
+require "grit"
 
 get '/' do
   repo = Grit::Repo.new(Dir.pwd)
